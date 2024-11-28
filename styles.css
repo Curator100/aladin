@@ -1,0 +1,108 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Ensure no scrollbars appear */
+}
+
+/* Background */
+.background img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Overlay Container */
+.overlay {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+/* Title and Subtitle */
+.title {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #FFD700; /* Gold Color */
+  text-shadow: 2px 2px 5px #000;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #87CEEB; /* Light Blue */
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Clickable GIF */
+.click-gif {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #FFD700;
+}
+
+.click-text {
+  font-size: 1.2em;
+  color: #FF4500; /* Vibrant Orange */
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Hidden Sections */
+.hidden {
+  display: none;
+}
+
+.genie-gif {
+  width: 300px;
+  height: auto;
+  margin: 20px auto;
+  border: 2px solid #87CEEB;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #87CEEB;
+}
+
+/* Form Section */
+.wish-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+input, button {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #FFD700;
+  color: #141414;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FFD700;
+}
+
+button:hover {
+  background-color: #FF4500;
+}
