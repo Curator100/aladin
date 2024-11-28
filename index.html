@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aladdin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="overlay">
+    <!-- Title and Subtitle -->
+    <h1 class="title">ALADDIN</h1>
+    <p class="subtitle">ASK FOR SOMETHING THAT YOU REALLY WANT</p>
+
+    <!-- Clickable GIF -->
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnNmZjNjam16aWJlZTAxZDhzd3g1Nm96MDRyaXFwbHlqaXJhbGZvNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2t1xQwwvkcFYFkxQDI/giphy.gif" 
+         alt="Click for Genie" 
+         class="click-gif" 
+         id="clickGif">
+
+    <!-- Text under Clickable GIF -->
+    <p class="click-text">Click here to get your genie</p>
+  </div>
+
+  <!-- Hidden Genie GIF -->
+  <div id="genieReveal" class="hidden">
+    <img src="https://media.giphy.com/media/YASduoNlGxSJa/giphy.gif?cid=ecf05e47mre81ad7vqjhip6sqtnx3bt4ugc5v1i77s14nz8j&ep=v1_gifs_search&rid=giphy.gif&ct=g" 
+         alt="Genie Appears" 
+         class="genie-gif">
+  </div>
+
+  <!-- Hidden Form Section -->
+  <div id="formSection" class="hidden">
+    <form id="wishForm" class="wish-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="address">Your Address:</label>
+      <input type="text" id="address" name="address" required>
+      
+      <label for="wish">One Thing You Want:</label>
+      <input type="text" id="wish" name="wish" required>
+      
+      <button type="submit">Send to Genie</button>
+    </form>
+  </div>
+
+  <!-- Background GIF -->
+  <div class="background">
+    <img src="https://media.giphy.com/media/xT77XYfBvO9i2or9Li/giphy.gif?cid=ecf05e47l3kzp2glid0h6j8koaa63085sde7y0gv0cx60fdz&ep=v1_gifs_search&rid=giphy.gif&ct=g" 
+         alt="Background GIF">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
